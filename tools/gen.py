@@ -31,8 +31,8 @@ Som ved alle forespørgsler på internettet kan tjenesterne se din IP-adresse. V
 
 T = {
     "en": dict(
-        home="Support", privacy="Privacy policy", updated="Last updated: 2 November 2026", title="Etikett support",
-        intro="Etikett shows the additives, allergens and signs of ultra-processing in food sold in Sweden, Denmark and Finland. Scan the barcode or photograph the ingredient list.",
+        home="Support", privacy="Privacy policy", updated="Last updated: 2 November 2026", title="Klarblik support",
+        intro="Klarblik shows the additives, allergens and signs of ultra-processing in food sold in Sweden, Denmark and Finland. Scan the barcode or photograph the ingredient list.",
         faq=[
             ("How do I restore my purchase?", "Open Settings → Unlock personal features → Restore purchase. Use the same Apple ID you bought with. Family members in your Family Sharing group get the purchase automatically."),
             ("The result doesn’t match the package.", "Tap “Different from the pack?” at the bottom of the result and photograph the ingredient list. The photo is read on your phone, and the result follows what is printed on the package you are holding."),
@@ -42,7 +42,7 @@ T = {
         ],
         contact_title="Contact", contact=f'Report a problem or ask a question by email: {MAIL}, or on GitHub: <a href="{ISSUES}">{ISSUES}</a> (public). Please do not include health information you do not need to share.',
         pp_title="Privacy policy",
-        summary="Short version: Etikett has no account, no ads and no analytics. We do not collect any personal data. Photos, lists and history stay on your phone.",
+        summary="Short version: Klarblik has no account, no ads and no analytics. We do not collect any personal data. Photos, lists and history stay on your phone.",
         pp=[
             ("What stays on your phone", "Ingredient photos and images you pick are read with Apple’s on-device text recognition and are never uploaded. Your avoid lists, family profiles and scan history are stored only on your phone. Deleting the app deletes them."),
             ("What is sent over the internet", services("en")),
@@ -55,8 +55,8 @@ T = {
         ],
         footer="Product data: Open Food Facts (ODbL). Additive names: official EU texts."),
     "sv": dict(
-        home="Support", privacy="Integritetspolicy", updated="Senast uppdaterad: 2 november 2026", title="Etikett – support",
-        intro="Etikett visar tillsatser, allergener och tecken på ultraprocessad mat i livsmedel som säljs i Sverige, Danmark och Finland. Skanna streckkoden eller fota ingredienslistan.",
+        home="Support", privacy="Integritetspolicy", updated="Senast uppdaterad: 2 november 2026", title="Klarblik – support",
+        intro="Klarblik visar tillsatser, allergener och tecken på ultraprocessad mat i livsmedel som säljs i Sverige, Danmark och Finland. Skanna streckkoden eller fota ingredienslistan.",
         faq=[
             ("Hur återställer jag mitt köp?", "Öppna Inställningar → Lås upp personliga funktioner → Återställ köp. Använd samma Apple-ID som när du köpte. Familjemedlemmar i din familjedelning får köpet automatiskt."),
             ("Resultatet stämmer inte med förpackningen.", "Tryck på ”Stämmer det inte med förpackningen?” längst ned i resultatet och fota ingredienslistan. Bilden läses på telefonen, och resultatet följer det som står på förpackningen du håller i."),
@@ -66,7 +66,7 @@ T = {
         ],
         contact_title="Kontakt", contact=f'Rapportera ett problem eller ställ en fråga via e-post: {MAIL}, eller på GitHub: <a href="{ISSUES}">{ISSUES}</a> (offentligt). Skriv inga uppgifter om hälsa som du inte behöver dela.',
         pp_title="Integritetspolicy",
-        summary="Kort version: Etikett har inget konto, ingen reklam och ingen analys. Vi samlar inte in några personuppgifter. Bilder, listor och historik stannar på telefonen.",
+        summary="Kort version: Klarblik har inget konto, ingen reklam och ingen analys. Vi samlar inte in några personuppgifter. Bilder, listor och historik stannar på telefonen.",
         pp=[
             ("Det här stannar på telefonen", "Bilder på ingredienslistor och bilder du väljer läses med Apples textigenkänning på telefonen och laddas aldrig upp. Dina listor, familjeprofiler och skanningshistorik sparas bara på telefonen. Tar du bort appen försvinner de."),
             ("Det här skickas över internet", services("sv")),
@@ -79,8 +79,8 @@ T = {
         ],
         footer="Produktdata: Open Food Facts (ODbL). Tillsatsnamn: EU:s officiella texter."),
     "da": dict(
-        home="Support", privacy="Privatlivspolitik", updated="Senest opdateret: 2. november 2026", title="Etikett – support",
-        intro="Etikett viser tilsætningsstoffer, allergener og tegn på ultraforarbejdet mad i fødevarer, der sælges i Danmark, Sverige og Finland. Scan stregkoden eller tag et billede af ingredienslisten.",
+        home="Support", privacy="Privatlivspolitik", updated="Senest opdateret: 2. november 2026", title="Klarblik – support",
+        intro="Klarblik viser tilsætningsstoffer, allergener og tegn på ultraforarbejdet mad i fødevarer, der sælges i Danmark, Sverige og Finland. Scan stregkoden eller tag et billede af ingredienslisten.",
         faq=[
             ("Hvordan gendanner jeg mit køb?", "Åbn Indstillinger → Lås personlige funktioner op → Gendan køb. Brug det samme Apple-id, som du købte med. Familiemedlemmer i din familiedeling får købet automatisk."),
             ("Resultatet passer ikke med emballagen.", "Tryk på ”Passer det ikke med pakken?” nederst i resultatet, og tag et billede af ingredienslisten. Billedet læses på telefonen, og resultatet følger det, der står på emballagen, du holder i hånden."),
@@ -90,7 +90,7 @@ T = {
         ],
         contact_title="Kontakt", contact=f'Rapportér et problem eller stil et spørgsmål via e-mail: {MAIL}, eller på GitHub: <a href="{ISSUES}">{ISSUES}</a> (offentligt). Skriv ingen helbredsoplysninger, som du ikke behøver at dele.',
         pp_title="Privatlivspolitik",
-        summary="Kort fortalt: Etikett har ingen konto, ingen reklamer og ingen analyse. Vi indsamler ingen personoplysninger. Billeder, lister og historik bliver på telefonen.",
+        summary="Kort fortalt: Klarblik har ingen konto, ingen reklamer og ingen analyse. Vi indsamler ingen personoplysninger. Billeder, lister og historik bliver på telefonen.",
         pp=[
             ("Det bliver på telefonen", "Billeder af ingredienslister og billeder, du vælger, læses med Apples tekstgenkendelse på telefonen og uploades aldrig. Dine lister, familieprofiler og scanningshistorik gemmes kun på telefonen. Sletter du appen, forsvinder de."),
             ("Det sendes over internettet", services("da")),
@@ -123,7 +123,7 @@ def render(lang, kind):
         title = t["title"]
         body = f'<h1>{title}</h1><p>{t["intro"]}</p>' + "".join(f"<section><h2>{q}</h2><p>{a}</p></section>" for q, a in t["faq"])
     else:
-        title = f'{t["pp_title"]} – Etikett'
+        title = f'{t["pp_title"]} – Klarblik'
         body = f'<h1>{title}</h1><p class="updated">{t["updated"]}</p><p><b>{t["summary"]}</b></p>' + "".join(f"<h2>{h}</h2><p>{p}</p>" for h, p in t["pp"])
     body += f'<h2>{t["contact_title"]}</h2><p>{t["contact"]}</p>'
     return f"""<!doctype html>

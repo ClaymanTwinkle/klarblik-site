@@ -1,6 +1,6 @@
 # etikett-site
 
-Support page and privacy policy for the Etikett app, served with GitHub Pages:
+Support page and privacy policy for the Klarblik app, served with GitHub Pages:
 
 - Support: https://claymantwinkle.github.io/etikett-site/ ([sv](https://claymantwinkle.github.io/etikett-site/sv/), [da](https://claymantwinkle.github.io/etikett-site/da/))
 - Privacy policy: https://claymantwinkle.github.io/etikett-site/privacy.html ([sv](https://claymantwinkle.github.io/etikett-site/sv/privacy.html), [da](https://claymantwinkle.github.io/etikett-site/da/privacy.html))
