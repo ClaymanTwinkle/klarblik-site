@@ -1,9 +1,9 @@
-"""生成 etikett-site 的支持页和隐私政策（英语、瑞典语、丹麦语）。用法：python3 -I gen.py <站点目录>"""
+"""生成 klarblik-site 的支持页和隐私政策（英语、瑞典语、丹麦语）。用法：python3 -I gen.py <站点目录>"""
 import os
 import sys
 
 OUT = sys.argv[1]
-ISSUES = "https://github.com/ClaymanTwinkle/etikett-site/issues"
+ISSUES = "https://github.com/ClaymanTwinkle/klarblik-site/issues"
 EMAIL = "claymantwinkle@gmail.com"
 MAIL = f'<a href="mailto:{EMAIL}">{EMAIL}</a>'
 OFF_PRIVACY = {"en": "https://world.openfoodfacts.org/privacy", "sv": "https://se.openfoodfacts.org/privacy", "da": "https://dk.openfoodfacts.org/privacy"}
