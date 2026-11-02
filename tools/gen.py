@@ -4,6 +4,8 @@ import sys
 
 OUT = sys.argv[1]
 ISSUES = "https://github.com/ClaymanTwinkle/etikett-site/issues"
+EMAIL = "claymantwinkle@gmail.com"
+MAIL = f'<a href="mailto:{EMAIL}">{EMAIL}</a>'
 OFF_PRIVACY = {"en": "https://world.openfoodfacts.org/privacy", "sv": "https://se.openfoodfacts.org/privacy", "da": "https://dk.openfoodfacts.org/privacy"}
 GH_PRIVACY = "https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement"
 DATA_REPO = "https://github.com/ClaymanTwinkle/etikett-data"
@@ -38,7 +40,7 @@ T = {
             ("Where do the explanations come from?", "Every statement points to an official source: EU regulations, EFSA scientific opinions and IARC classifications. The scoring method is public and versioned in the app. The app provides information, not medical advice. Always read the package if you have an allergy."),
             ("Does the app work offline?", "Yes. The product database and reading of photos work without a connection. Online lookup and the weekly database update can be turned off in Settings."),
         ],
-        contact_title="Contact", contact=f'Report a problem or ask a question: <a href="{ISSUES}">{ISSUES}</a>. Please do not include personal or health information.',
+        contact_title="Contact", contact=f'Report a problem or ask a question by email: {MAIL}, or on GitHub: <a href="{ISSUES}">{ISSUES}</a> (public). Please do not include health information you do not need to share.',
         pp_title="Privacy policy",
         summary="Short version: Etikett has no account, no ads and no analytics. We do not collect any personal data. Photos, lists and history stay on your phone.",
         pp=[
@@ -47,7 +49,8 @@ T = {
             ("Purchases", "The one-time purchase goes through Apple’s App Store. We never see your name, Apple ID or payment details."),
             ("No tracking", "There is no advertising, no analytics and no attribution software in the app, and nothing is shared with data brokers."),
             ("Children", "The app does not collect data from anyone, including children."),
-            ("Your rights", "Because we hold no personal data about you, there is nothing for us to access, correct or delete. You can delete everything the app has stored by deleting the app."),
+            ("If you email us", "If you write to us, we receive your email address and message through Gmail (Google). We use them only to answer you, and delete the conversation when the matter is settled, at the latest after 12 months. Ask us at any time and we delete it straight away."),
+            ("Your rights", "The app gives us no personal data about you, so apart from emails you send us there is nothing for us to access, correct or delete. You can delete everything the app has stored by deleting the app."),
             ("Changes", "If this policy changes, the new version is published on this page with a new date."),
         ],
         footer="Product data: Open Food Facts (ODbL). Additive names: official EU texts."),
@@ -61,7 +64,7 @@ T = {
             ("Var kommer förklaringarna ifrån?", "Varje uppgift hänvisar till en officiell källa: EU:s förordningar, EFSA:s vetenskapliga yttranden och IARC:s klassningar. Bedömningsmetoden är öppen och har versionsnummer i appen. Appen ger information, inte medicinska råd. Läs alltid förpackningen om du har en allergi."),
             ("Fungerar appen utan nät?", "Ja. Produktdatabasen och avläsningen av bilder fungerar utan uppkoppling. Uppslag och den veckovisa uppdateringen kan stängas av i Inställningar."),
         ],
-        contact_title="Kontakt", contact=f'Rapportera ett problem eller ställ en fråga: <a href="{ISSUES}">{ISSUES}</a>. Skriv inga personuppgifter eller uppgifter om hälsa.',
+        contact_title="Kontakt", contact=f'Rapportera ett problem eller ställ en fråga via e-post: {MAIL}, eller på GitHub: <a href="{ISSUES}">{ISSUES}</a> (offentligt). Skriv inga uppgifter om hälsa som du inte behöver dela.',
         pp_title="Integritetspolicy",
         summary="Kort version: Etikett har inget konto, ingen reklam och ingen analys. Vi samlar inte in några personuppgifter. Bilder, listor och historik stannar på telefonen.",
         pp=[
@@ -70,7 +73,8 @@ T = {
             ("Köp", "Engångsköpet görs via Apples App Store. Vi ser aldrig ditt namn, Apple-ID eller dina betaluppgifter."),
             ("Ingen spårning", "Appen har ingen reklam, ingen analys och inga verktyg för attribution, och inget delas med datamäklare."),
             ("Barn", "Appen samlar inte in uppgifter från någon, inte heller från barn."),
-            ("Dina rättigheter", "Eftersom vi inte har några personuppgifter om dig finns det inget för oss att lämna ut, rätta eller radera. Allt appen har sparat tas bort när du tar bort appen."),
+            ("Om du mejlar oss", "Om du skriver till oss får vi din e-postadress och ditt meddelande via Gmail (Google). Vi använder dem bara för att svara dig och raderar konversationen när ärendet är klart, senast efter 12 månader. Be oss när som helst, så raderar vi den direkt."),
+            ("Dina rättigheter", "Appen ger oss inga personuppgifter om dig, så utöver mejl du skickar till oss finns det inget för oss att lämna ut, rätta eller radera. Allt appen har sparat tas bort när du tar bort appen."),
             ("Ändringar", "Om policyn ändras publiceras den nya versionen på den här sidan med nytt datum."),
         ],
         footer="Produktdata: Open Food Facts (ODbL). Tillsatsnamn: EU:s officiella texter."),
@@ -84,7 +88,7 @@ T = {
             ("Hvor kommer forklaringerne fra?", "Hver oplysning henviser til en officiel kilde: EU-forordninger, EFSA’s videnskabelige udtalelser og IARC’s klassificeringer. Vurderingsmetoden er åben og har versionsnummer i appen. Appen giver information, ikke medicinsk rådgivning. Læs altid emballagen, hvis du har en allergi."),
             ("Virker appen uden netværk?", "Ja. Produktdatabasen og aflæsningen af billeder virker uden forbindelse. Opslag og den ugentlige opdatering kan slås fra i Indstillinger."),
         ],
-        contact_title="Kontakt", contact=f'Rapportér et problem eller stil et spørgsmål: <a href="{ISSUES}">{ISSUES}</a>. Skriv ingen personoplysninger eller helbredsoplysninger.',
+        contact_title="Kontakt", contact=f'Rapportér et problem eller stil et spørgsmål via e-mail: {MAIL}, eller på GitHub: <a href="{ISSUES}">{ISSUES}</a> (offentligt). Skriv ingen helbredsoplysninger, som du ikke behøver at dele.',
         pp_title="Privatlivspolitik",
         summary="Kort fortalt: Etikett har ingen konto, ingen reklamer og ingen analyse. Vi indsamler ingen personoplysninger. Billeder, lister og historik bliver på telefonen.",
         pp=[
@@ -93,7 +97,8 @@ T = {
             ("Køb", "Engangskøbet foregår via Apples App Store. Vi ser aldrig dit navn, Apple-id eller dine betalingsoplysninger."),
             ("Ingen sporing", "Appen har ingen reklamer, ingen analyse og ingen værktøjer til attribution, og intet deles med datamæglere."),
             ("Børn", "Appen indsamler ikke oplysninger fra nogen, heller ikke fra børn."),
-            ("Dine rettigheder", "Da vi ikke har nogen personoplysninger om dig, er der intet for os at udlevere, rette eller slette. Alt, appen har gemt, slettes, når du sletter appen."),
+            ("Hvis du skriver til os", "Hvis du skriver til os, modtager vi din e-mailadresse og din besked via Gmail (Google). Vi bruger dem kun til at svare dig og sletter samtalen, når sagen er afklaret, senest efter 12 måneder. Bed os når som helst, så sletter vi den med det samme."),
+            ("Dine rettigheder", "Appen giver os ingen personoplysninger om dig, så ud over e-mails, du sender os, er der intet for os at udlevere, rette eller slette. Alt, appen har gemt, slettes, når du sletter appen."),
             ("Ændringer", "Hvis politikken ændres, offentliggøres den nye version på denne side med ny dato."),
         ],
         footer="Produktdata: Open Food Facts (ODbL). Navne på tilsætningsstoffer: EU’s officielle tekster."),
