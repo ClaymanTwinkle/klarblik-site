@@ -20,13 +20,13 @@ def services(lang):
 Like any internet request, these services can see your IP address. We do not receive it."""
     if lang == "sv":
         return f"""Appen har ingen egen server. Den ansluter till två externa tjänster, och båda kan stängas av i Inställningar (”Slå upp i Open Food Facts”):
-<ul><li><b>Open Food Facts</b>: när en skannad vara inte finns i databasen på telefonen skickas streckkodsnumret (varans nummer, inte uppgifter om dig) till Open Food Facts öppna databas. Produktbilder hämtas också från Open Food Facts. Inget konto, ingen plats och ingen enhetsidentitet skickas. Se <a href="{off}">Open Food Facts integritetspolicy</a>.</li>
-<li><b>GitHub</b>: en gång i veckan hämtar appen den senaste produktdatabasen som en fil från <a href="{repo}">GitHub</a>. Inget skickas utom själva nedladdningen. Se <a href="{gh}">GitHubs integritetspolicy</a>.</li></ul>
-Som vid alla anrop på internet kan tjänsterna se din IP-adress. Vi får inte del av den."""
-    return f"""Appen har ingen egen server. Den forbinder til to eksterne tjenester, og begge kan slås fra i Indstillinger (”Slå op i Open Food Facts”):
-<ul><li><b>Open Food Facts</b>: når en scannet vare ikke findes i databasen på telefonen, sendes stregkodsnummeret (varens nummer, ikke oplysninger om dig) til Open Food Facts’ åbne database. Produktbilleder hentes også fra Open Food Facts. Der sendes ingen konto, placering eller enheds-id. Se <a href="{off}">Open Food Facts’ privatlivspolitik</a>.</li>
-<li><b>GitHub</b>: en gang om ugen henter appen den nyeste produktdatabase som en fil fra <a href="{repo}">GitHub</a>. Der sendes intet ud over selve hentningen. Se <a href="{gh}">GitHubs privatlivserklæring</a>.</li></ul>
-Som ved alle forespørgsler på internettet kan tjenesterne se din IP-adresse. Vi får den ikke."""
+<ul><li><b>Open Food Facts</b>: när en skannad vara inte finns i databasen på telefonen, skickas streckkodsnumret (varans nummer, inte uppgifter om dig) till Open Food Facts öppna databas. Produktbilder hämtas också från Open Food Facts. Inga kontouppgifter, platsuppgifter eller enhets-ID skickas. Se <a href="{off}">Open Food Facts integritetspolicy</a>.</li>
+<li><b>GitHub</b>: en gång i veckan hämtar appen den senaste produktdatabasen som en fil från <a href="{repo}">GitHub</a>. Inget annat skickas än själva förfrågan om filen. Se <a href="{gh}">GitHubs integritetspolicy</a>.</li></ul>
+Som vid all trafik på internet kan tjänsterna se din IP-adress. Vi får inte del av den."""
+    return f"""Appen har ingen egen server. Den opretter forbindelse til to eksterne tjenester, og begge kan slås fra i Indstillinger (”Slå op i Open Food Facts”):
+<ul><li><b>Open Food Facts</b>: når en scannet vare ikke findes i databasen på telefonen, sendes stregkodenummeret (varens nummer, ikke oplysninger om dig) til Open Food Facts’ åbne database. Produktbilleder hentes også fra Open Food Facts. Der sendes hverken kontooplysninger, placering eller enheds-id. Se <a href="{off}">Open Food Facts’ privatlivspolitik</a>.</li>
+<li><b>GitHub</b>: en gang om ugen henter appen den nyeste produktdatabase som en fil fra <a href="{repo}">GitHub</a>. Der sendes ikke andet end selve anmodningen om at hente filen. Se <a href="{gh}">GitHubs privatlivserklæring</a>.</li></ul>
+Som ved alle forespørgsler på internettet kan tjenesterne se din IP-adresse. Vi får den ikke at se."""
 
 
 T = {
@@ -55,23 +55,23 @@ T = {
         ],
         footer="Product data: Open Food Facts (ODbL). Additive names: official EU texts."),
     "sv": dict(
-        home="Support", privacy="Integritetspolicy", updated="Senast uppdaterad: 2 november 2026", title="Klarblik – support",
-        intro="Klarblik visar tillsatser, allergener och tecken på ultraprocessad mat i livsmedel som säljs i Sverige, Danmark och Finland. Skanna streckkoden eller fota ingredienslistan.",
+        home="Support", privacy="Integritetspolicy", updated="Senast uppdaterad: 3 november 2026", title="Klarblik – support",
+        intro="För livsmedel som säljs i Sverige, Danmark och Finland visar Klarblik tillsatser, allergener och tecken på att varan är ultraprocessad. Skanna streckkoden eller fota ingredienslistan.",
         faq=[
-            ("Hur återställer jag mitt köp?", "Öppna Inställningar → Lås upp personliga funktioner → Återställ köp. Använd samma Apple-ID som när du köpte. Familjemedlemmar i din familjedelning får köpet automatiskt."),
-            ("Resultatet stämmer inte med förpackningen.", "Tryck på ”Stämmer det inte med förpackningen?” längst ned i resultatet och fota ingredienslistan. Bilden läses på telefonen, och resultatet följer det som står på förpackningen du håller i."),
-            ("Varför hittas inte varan?", "Över 18 000 nordiska varor finns i appen och uppdateras varje vecka. Saknas varan och uppslag är på skickas streckkodsnumret till Open Food Facts. Finns den inte där heller, fota ingredienslistan."),
-            ("Var kommer förklaringarna ifrån?", "Varje uppgift hänvisar till en officiell källa: EU:s förordningar, EFSA:s vetenskapliga yttranden och IARC:s klassningar. Bedömningsmetoden är öppen och har versionsnummer i appen. Appen ger information, inte medicinska råd. Läs alltid förpackningen om du har en allergi."),
-            ("Fungerar appen utan nät?", "Ja. Produktdatabasen och avläsningen av bilder fungerar utan uppkoppling. Uppslag och den veckovisa uppdateringen kan stängas av i Inställningar."),
+            ("Hur återställer jag mitt köp?", "Öppna Inställningar → Lås upp personliga funktioner → Återställ köp. Använd samma Apple-ID som när du köpte. Använder ni Familjedelning får alla i familjegruppen tillgång till köpet automatiskt."),
+            ("Resultatet stämmer inte med förpackningen.", "Tryck på ”Stämmer det inte med förpackningen?” längst ned i resultatet och fota ingredienslistan. Bilden läses av på telefonen, och resultatet bygger då på det som står på förpackningen du håller i."),
+            ("Varför hittas inte varan?", "Över 18 000 nordiska varor finns i appen och uppdateras varje vecka. Saknas varan och sökning online är på, skickas streckkodsnumret till Open Food Facts. Finns den inte där heller, fota ingredienslistan."),
+            ("Var kommer förklaringarna ifrån?", "Varje uppgift hänvisar till en officiell källa: EU:s förordningar, Efsas vetenskapliga yttranden och IARC:s klassificeringar. Bedömningsmetoden är öppen, och i appen står vilken version som används. Appen ger information, inte medicinska råd. Läs alltid på förpackningen om du har allergi."),
+            ("Fungerar appen utan nät?", "Ja. Produktdatabasen och avläsningen av bilder fungerar utan uppkoppling. Sökning online och den veckovisa uppdateringen kan stängas av i Inställningar."),
         ],
-        contact_title="Kontakt", contact=f'Rapportera ett problem eller ställ en fråga via e-post: {MAIL}, eller på GitHub: <a href="{ISSUES}">{ISSUES}</a> (offentligt). Skriv inga uppgifter om hälsa som du inte behöver dela.',
+        contact_title="Kontakt", contact=f'Rapportera ett problem eller ställ en fråga via e-post: {MAIL}, eller på GitHub: <a href="{ISSUES}">{ISSUES}</a> (synligt för alla). Dela inte uppgifter om din hälsa i onödan.',
         pp_title="Integritetspolicy",
-        summary="Kort version: Klarblik har inget konto, ingen reklam och ingen analys. Vi samlar inte in några personuppgifter. Bilder, listor och historik stannar på telefonen.",
+        summary="I korthet: Klarblik har inga användarkonton, ingen reklam och inga analysverktyg. Vi samlar inte in några personuppgifter. Bilder, listor och historik stannar på telefonen.",
         pp=[
-            ("Det här stannar på telefonen", "Bilder på ingredienslistor och bilder du väljer läses med Apples textigenkänning på telefonen och laddas aldrig upp. Dina listor, familjeprofiler och skanningshistorik sparas bara på telefonen. Tar du bort appen försvinner de."),
+            ("Det här stannar på telefonen", "Bilder på ingredienslistor och bilder du väljer läses av med Apples textigenkänning på telefonen och laddas aldrig upp. Dina listor, familjeprofiler och skanningshistorik sparas bara på telefonen. Tar du bort appen försvinner de."),
             ("Det här skickas över internet", services("sv")),
-            ("Köp", "Engångsköpet görs via Apples App Store. Vi ser aldrig ditt namn, Apple-ID eller dina betaluppgifter."),
-            ("Ingen spårning", "Appen har ingen reklam, ingen analys och inga verktyg för attribution, och inget delas med datamäklare."),
+            ("Köp", "Engångsköpet görs via Apples App Store. Vi ser aldrig ditt namn, Apple-ID eller dina betalningsuppgifter."),
+            ("Ingen spårning", "Appen har ingen reklam och inga analys- eller attributionsverktyg, och inget delas med datamäklare."),
             ("Barn", "Appen samlar inte in uppgifter från någon, inte heller från barn."),
             ("Om du mejlar oss", "Om du skriver till oss får vi din e-postadress och ditt meddelande via Gmail (Google). Vi använder dem bara för att svara dig och raderar konversationen när ärendet är klart, senast efter 12 månader. Be oss när som helst, så raderar vi den direkt."),
             ("Dina rättigheter", "Appen ger oss inga personuppgifter om dig, så utöver mejl du skickar till oss finns det inget för oss att lämna ut, rätta eller radera. Allt appen har sparat tas bort när du tar bort appen."),
@@ -79,26 +79,26 @@ T = {
         ],
         footer="Produktdata: Open Food Facts (ODbL). Tillsatsnamn: EU:s officiella texter."),
     "da": dict(
-        home="Support", privacy="Privatlivspolitik", updated="Senest opdateret: 2. november 2026", title="Klarblik – support",
-        intro="Klarblik viser tilsætningsstoffer, allergener og tegn på ultraforarbejdet mad i fødevarer, der sælges i Danmark, Sverige og Finland. Scan stregkoden eller tag et billede af ingredienslisten.",
+        home="Support", privacy="Privatlivspolitik", updated="Senest opdateret: 3. november 2026", title="Klarblik – support",
+        intro="Klarblik viser, hvilke tilsætningsstoffer og allergener der er i fødevarer, som sælges i Danmark, Sverige og Finland, og om der er tegn på, at de er ultraforarbejdede. Scan stregkoden eller tag et billede af ingredienslisten.",
         faq=[
-            ("Hvordan gendanner jeg mit køb?", "Åbn Indstillinger → Lås personlige funktioner op → Gendan køb. Brug det samme Apple-id, som du købte med. Familiemedlemmer i din familiedeling får købet automatisk."),
+            ("Hvordan gendanner jeg mit køb?", "Åbn Indstillinger → Lås personlige funktioner op → Gendan køb. Brug den samme Apple-konto, som du købte med. Medlemmer af din familiedelingsgruppe får automatisk adgang til købet."),
             ("Resultatet passer ikke med emballagen.", "Tryk på ”Passer det ikke med pakken?” nederst i resultatet, og tag et billede af ingredienslisten. Billedet læses på telefonen, og resultatet følger det, der står på emballagen, du holder i hånden."),
-            ("Hvorfor findes varen ikke?", "Over 18.000 nordiske varer ligger i appen og opdateres hver uge. Mangler varen, og opslag er slået til, sendes stregkodsnummeret til Open Food Facts. Findes den heller ikke der, så tag et billede af ingredienslisten."),
-            ("Hvor kommer forklaringerne fra?", "Hver oplysning henviser til en officiel kilde: EU-forordninger, EFSA’s videnskabelige udtalelser og IARC’s klassificeringer. Vurderingsmetoden er åben og har versionsnummer i appen. Appen giver information, ikke medicinsk rådgivning. Læs altid emballagen, hvis du har en allergi."),
-            ("Virker appen uden netværk?", "Ja. Produktdatabasen og aflæsningen af billeder virker uden forbindelse. Opslag og den ugentlige opdatering kan slås fra i Indstillinger."),
+            ("Hvorfor finder appen ikke varen?", "Over 18.000 nordiske varer ligger i appen og opdateres hver uge. Hvis varen mangler, og opslag er slået til, sendes stregkodenummeret til Open Food Facts. Findes den heller ikke der, så tag et billede af ingredienslisten."),
+            ("Hvor kommer forklaringerne fra?", "Hver oplysning henviser til en officiel kilde: EU-forordninger, EFSA’s videnskabelige udtalelser og IARC’s klassificeringer. Vurderingsmetoden er offentlig og kan ses i appen med versionsnummer. Appen giver information, ikke medicinsk rådgivning. Tjek altid emballagen, hvis du har allergi."),
+            ("Virker appen uden internet?", "Ja. Produktdatabasen og aflæsningen af billeder virker uden internetforbindelse. Opslag og den ugentlige opdatering kan slås fra i Indstillinger."),
         ],
-        contact_title="Kontakt", contact=f'Rapportér et problem eller stil et spørgsmål via e-mail: {MAIL}, eller på GitHub: <a href="{ISSUES}">{ISSUES}</a> (offentligt). Skriv ingen helbredsoplysninger, som du ikke behøver at dele.',
+        contact_title="Kontakt", contact=f'Rapportér et problem eller stil et spørgsmål via e-mail: {MAIL}, eller på GitHub: <a href="{ISSUES}">{ISSUES}</a> (offentligt). Del ikke flere helbredsoplysninger end nødvendigt.',
         pp_title="Privatlivspolitik",
-        summary="Kort fortalt: Klarblik har ingen konto, ingen reklamer og ingen analyse. Vi indsamler ingen personoplysninger. Billeder, lister og historik bliver på telefonen.",
+        summary="Kort fortalt: Klarblik kræver ingen konto og har ingen reklamer eller analyseværktøjer. Vi indsamler ingen personoplysninger. Billeder, lister og historik bliver på telefonen.",
         pp=[
-            ("Det bliver på telefonen", "Billeder af ingredienslister og billeder, du vælger, læses med Apples tekstgenkendelse på telefonen og uploades aldrig. Dine lister, familieprofiler og scanningshistorik gemmes kun på telefonen. Sletter du appen, forsvinder de."),
-            ("Det sendes over internettet", services("da")),
-            ("Køb", "Engangskøbet foregår via Apples App Store. Vi ser aldrig dit navn, Apple-id eller dine betalingsoplysninger."),
-            ("Ingen sporing", "Appen har ingen reklamer, ingen analyse og ingen værktøjer til attribution, og intet deles med datamæglere."),
+            ("Det, der bliver på telefonen", "Billeder af ingredienslister og billeder, du vælger, læses med Apples tekstgenkendelse på telefonen og uploades aldrig. Dine lister, familieprofiler og scanningshistorik gemmes kun på telefonen. Sletter du appen, forsvinder de."),
+            ("Det, der sendes over internettet", services("da")),
+            ("Køb", "Engangskøbet foregår via Apples App Store. Vi ser aldrig dit navn, din Apple-konto eller dine betalingsoplysninger."),
+            ("Ingen sporing", "Appen har ingen reklamer og ingen analyse- eller attributionsværktøjer, og der deles intet med datamæglere."),
             ("Børn", "Appen indsamler ikke oplysninger fra nogen, heller ikke fra børn."),
-            ("Hvis du skriver til os", "Hvis du skriver til os, modtager vi din e-mailadresse og din besked via Gmail (Google). Vi bruger dem kun til at svare dig og sletter samtalen, når sagen er afklaret, senest efter 12 måneder. Bed os når som helst, så sletter vi den med det samme."),
-            ("Dine rettigheder", "Appen giver os ingen personoplysninger om dig, så ud over e-mails, du sender os, er der intet for os at udlevere, rette eller slette. Alt, appen har gemt, slettes, når du sletter appen."),
+            ("Hvis du skriver til os", "Hvis du skriver til os, modtager vi din e-mailadresse og din besked via Gmail (Google). Vi bruger dem kun til at svare dig og sletter korrespondancen, når sagen er afsluttet, dog senest efter 12 måneder. Du kan når som helst bede os om at slette den, så gør vi det med det samme."),
+            ("Dine rettigheder", "Appen giver os ingen personoplysninger om dig. Bortset fra e-mails, du selv sender os, har vi derfor intet, vi kan give dig indsigt i, rette eller slette. Alt, appen har gemt, slettes, når du sletter appen."),
             ("Ændringer", "Hvis politikken ændres, offentliggøres den nye version på denne side med ny dato."),
         ],
         footer="Produktdata: Open Food Facts (ODbL). Navne på tilsætningsstoffer: EU’s officielle tekster."),
